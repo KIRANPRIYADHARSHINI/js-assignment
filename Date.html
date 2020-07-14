@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Date and Time</title>
+    </head>
+
+   <body>
+       <h1 style="font-family: 'Times New Roman', Times, serif;font-size: 40px;font-weight:bold;"><center>          
+        CURRENT DATE AND TIME</center></h1>
+       
+       <script type="text/javascript">
+            var cDate=new Date();
+            var cDay=cDate.getDay();
+
+            var weekday=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            document.write('Today is :' +weekday[cDay]);
+
+            var hours=cDate.getHours();
+            var ampm=hours >=12 ?'PM' : 'AM';
+            hours=hours % 12;
+            hours=hours ? hours:12;
+
+            var minutes=cDate.getMinutes();
+            minutes=minutes <10 ? '0' +minutes : minutes;
+
+            var ctime = hours + " " + ampm + ":" +minutes+ ":" +cDate.getSeconds();
+            document.write("<br/>");
+            document.write("Current Time : "+ctime);
+            document.write("<br/>");
+       </script>
+   </body> 
+</html>

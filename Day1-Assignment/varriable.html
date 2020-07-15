@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAR AND LET AND CONST</title>
+    <style>
+        table,td,th{
+          border: 1px solid black;            
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <h1><center> Differnce between VAR AND LET AND CONST</center></h1>
+    <center><table>
+        
+        <tr>
+            <th>Var</th>
+            <th>Let</th>
+            <th>Const</th>
+        </tr>
+
+        <tr>
+            <td>The var will be able to declaring the variable anywhere in the paricular block. And var is a global variable. var is "FUNCTION SCOPE".
+            <br/>
+            Ex: <br/>
+            var name="kiran" <br/>
+            var age=24;<br/>
+            var canfly=false;<br/>
+            var languages= ['Tamil','English'];
+            </td>
+
+            <td>The Let will be a Local varriable, which will be the scobe of the block. Let will be used to work inside the particular scobe. And let is a "BLOCK SCOPED". The “block” defined by curly braces i.e. {}.<br/>
+            Ex: <br/>
+            let name="chinnu"; <br/>
+            name="varsha";<br/>
+            
+            console.log("Uisng Let: ",name);
+            console.log(name);            
+            </td>
+
+            <td>Constant is a keyword (const). The const cannot be re-assigned to a new value. And const is a "BLOCK SCOPED".<br/>
+            Ex: <br/>
+            const country = "India";<br/>
+            console.log(country);
+            </td>
+        </tr>   
+    </table></center>
+
+    <center>
+        <h2><a rel="styledheet" href="scripts/varletconst.js">Example for Var Let Const </a></h2>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function odd_even()
+        {
+            var num = Number(document.getElementById("num_input").value);
+            if(num % 2 == 0 && num==false)
+            // {
+            //     // alert("Even Number");
+            //     console.log("The Entered number is :" +num+ "and the number is Even");
+            // }
+            {
+                
+                console.log("The Entered number is :" +num+ "and the number is Odd");
+            }
+        }
+    </script>
+</head>
+<body>
+    <body>
+        Enter Any Number:<input id="num_input"><br />
+        <button onclick="odd_even()">Click me</button>
+</body>
+</html>
